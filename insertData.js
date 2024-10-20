@@ -52,7 +52,7 @@ const gamesData = [
 const playersData = [
   {
     name: "Faker",
-    picture: "https://example.com/pictures/faker.jpg",
+    picture: "/faker.jpg",
     details: {
       role: "Mid Laner",
       rank: "Challenger",
@@ -65,7 +65,7 @@ const playersData = [
   },
   {
     name: "Dendi",
-    picture: "https://example.com/pictures/dendi.jpg",
+    picture: "/den.png",
     details: {
       role: "Mid Laner",
       rank: "Immortal",
@@ -78,7 +78,7 @@ const playersData = [
   },
   {
     name: "s1mple",
-    picture: "https://example.com/pictures/s1mple.jpg",
+    picture: "/sim.jpeg",
     details: {
       role: "AWPer",
       rank: "Global Elite",
@@ -91,7 +91,7 @@ const playersData = [
   },
   {
     name: "TenZ",
-    picture: "https://example.com/pictures/tenz.jpg",
+    picture: "/tenz.jpg",
     details: {
       role: "Duelist",
       rank: "Radiant",
