@@ -95,6 +95,15 @@ app.post('/api/player', async (req, res) => {
   }
 });
 
+// Delete a pending player by ID
+app.delete('/api/pending-players/:id', (req, res) => {
+  const playerId = req.params.id;
+
+  PendingPlayer.findByIdAndDelete(playerId)
+    .then(() => res.status(200).json({ message: 'Player deleted from pending list' }))
+    .catch(err => res.status(500).json({ error: 'Failed to delete player' }));
+});
+
 // API route to add a pending player
 app.post('/api/pending-player', async (req, res) => {
   const { name, gameId, picture, details } = req.body;
